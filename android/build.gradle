@@ -37,6 +37,14 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_18
+        targetCompatibility JavaVersion.VERSION_18
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_18.toString()
+    }
 }
 
 dependencies {
