@@ -25,8 +25,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace 'ai.dongmi.image_gallery_saver'
-    testNamespace 'ai.dongmi.image_gallery_saver.test'
+    if (project.android.hasProperty("namespace")) {
+        namespace 'com.example.imagegallerysaver'
+    }
     
     compileSdkVersion 30
 
